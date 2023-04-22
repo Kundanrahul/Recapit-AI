@@ -1,0 +1,58 @@
+.typewriter {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 0.15em;
+    animation: typing-cursor 0.75s steps(1) infinite;
+    background: linear-gradient(to right, #00b4db, #ff6b6b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  font-size: 20px;
+  
+  letter-spacing: 1px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  text-shadow: 0px 2px 2px rgba(0,0,0,0.25);
+  }
+  
+  .typewriter .typing-cursor {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 0.15em;
+    height: 1.1em;
+    background-color: orange;
+    animation: blink-caret 0.75s step-end infinite;
+  }
+  
+  @keyframes typing-cursor {
+    from {
+      border-right: 0.15em solid rgba(0, 0, 0, 0.1);
+    }
+    to {
+      border-right: 0.15em solid orange;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from,
+    to {
+      background-color: transparent;
+    }
+    50% {
+      background-color: orange;
+    }
+  }
+  @media  screen and (max-width:640px) {
+    .typewriter {
+      font-size: 10px;
+      margin-left: 1.5rem;
+      white-space: normal;
+      margin-top: 0.5rem;
+    }
+    
+  }
+  
